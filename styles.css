@@ -289,10 +289,10 @@ align-items: center;
  align-items: center;
 background-color: #FFFFFF;
 border-radius: 6px;
+box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .foto-mark-guerrero{
 margin-bottom: 36px;
-
 }
 .name-mark-guerrero{
 display: flex;
@@ -304,11 +304,20 @@ display: flex;
 justify-content: center;
 padding-bottom: 12px;
 }
+.icon-list-our-team:hover,
+.icon-list-our-team:focus{
+fill:#404BBF;
+}
+.icon-list-our-team {
+    transition: fill 0.3s ease;
+    /* Плавний перехід для кольору заповнення */
+}
 /* =============== /Mark-Guerrero =============== */
 /* =============== Tom Ford =============== */
 .Tom-Ford-images{
 background-color: #FFFFFF;
 border-radius: 6px;
+box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .name-tom-ford{
 display: flex;
@@ -328,6 +337,7 @@ margin-bottom: 36px;
 .Camila-Garcia-images{
 background-color: #FFFFFF;
 border-radius: 6px;
+box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
  .name-camila-garcia {
     display: flex;
@@ -349,6 +359,7 @@ border-radius: 6px;
 .Daniel-Wilson-images{
 background-color: #FFFFFF;
 border-radius: 6px;
+box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .name-daniel-wilson {
     display: flex;
@@ -483,6 +494,198 @@ border-radius: 6px;
     line-height: 1.5;
     color: #434455;
 }
+/* =============== Banking App =============== */
+.Banking-App{
+position: relative;
+align-items: center;
+background-color: #FFFFFF;
+border-radius: 6px;
+overflow: hidden;
+}
+
+ .system-banking-app{
+padding-bottom: 8px;
+padding-top: 32px;
+padding-left: 16px;
+}
+ .text-app{
+padding-bottom: 32px;
+padding-left: 16px
+}
+.section-text-Banking-App{
+border-bottom: 2px solid #E7E9FC;
+border-left: 2px solid #E7E9FC;
+border-right: 2px solid #E7E9FC;
+border-top: none;
+
+} 
+.foto-Banking-App{
+vertical-align: middle;
+}
+.owerlay{
+position: absolute;
+width: 360px;
+height: 300px;
+top: 0;
+left: 0;
+background-color: #4D5AE5;
+transform: translateY(150%);
+}
+.to-owerlay{
+    
+}
+.text-owerlay{
+padding-top: 40px;
+padding-left: 32px;
+padding-right: 32px;
+color: #ffffff;
+}
+/* =============== /Banking App =============== */
+/* =============== Cashless Payment =============== */
+.Cashless-Payment {
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+}
+
+.system-payment {
+    padding-bottom: 8px;
+    padding-top: 32px;
+    padding-left: 16px;
+}
+
+.text-payment {
+    padding-bottom: 32px;
+    padding-left: 16px
+}
+
+.section-text-Cashless-Payment {
+    border-bottom: 2px solid #E7E9FC;
+    border-left: 2px solid #E7E9FC;
+    border-right: 2px solid #E7E9FC;
+    border-top: none;
+}
+
+.foto-Cashless-Payment {
+    vertical-align: middle;
+}
+/* =============== /Cashless Payment =============== */
+/* =============== Meditation App =============== */
+.Meditation-App {
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+}
+
+.system-meditation-app {
+    padding-bottom: 8px;
+    padding-top: 32px;
+    padding-left: 16px;
+}
+
+.system-app {
+    padding-bottom: 32px;
+    padding-left: 16px
+}
+
+.section-text-Meditation-App {
+    border-bottom: 2px solid #E7E9FC;
+    border-left: 2px solid #E7E9FC;
+    border-right: 2px solid #E7E9FC;
+    border-top: none;
+}
+
+.foto-Meditation-App {
+    vertical-align: middle;
+}
+/* =============== /Meditation App =============== */
+/* =============== Taxi Service =============== */
+.Taxi-Service {
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+}
+
+.system-taxi-service {
+    padding-bottom: 8px;
+    padding-top: 32px;
+    padding-left: 16px;
+}
+
+.text-taxi-service {
+    padding-bottom: 32px;
+    padding-left: 16px
+}
+
+.section-text-Taxi-Service {
+    border-bottom: 2px solid #E7E9FC;
+    border-left: 2px solid #E7E9FC;
+    border-right: 2px solid #E7E9FC;
+    border-top: none;
+}
+
+.foto-Taxi-Service {
+    vertical-align: middle;
+}
+/* =============== /Taxi Service =============== */
+/* =============== Screen Illustrations =============== */
+.Screen-Illustrations {
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+}
+
+.system-screen-illustrations {
+    padding-bottom: 8px;
+    padding-top: 32px;
+    padding-left: 16px;
+}
+
+.text-screen-illustrations {
+    padding-bottom: 32px;
+    padding-left: 16px
+}
+
+.section-text-Screen-Illustrations {
+    border-bottom: 2px solid #E7E9FC;
+    border-left: 2px solid #E7E9FC;
+    border-right: 2px solid #E7E9FC;
+    border-top: none;
+}
+
+.foto-Screen-Illustrations {
+    vertical-align: middle;
+}
+/* =============== /Screen Illustrations =============== */
+/* =============== Online Courses =============== */
+.Online-Courses {
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+}
+
+.system-online-courses {
+    padding-bottom: 8px;
+    padding-top: 32px;
+    padding-left: 16px;
+}
+
+.text-marketing {
+    padding-bottom: 32px;
+    padding-left: 16px
+}
+
+.section-text-Online-Courses {
+    border-bottom: 2px solid #E7E9FC;
+    border-left: 2px solid #E7E9FC;
+    border-right: 2px solid #E7E9FC;
+    border-top: none;
+}
+
+.foto-Online-Courses {
+    vertical-align: middle;
+}
+/* =============== /Online Courses =============== */
 
 .text-footer {
     font-weight: 400;
@@ -497,13 +700,42 @@ border-radius: 6px;
     padding-bottom: 107px;
 }
 
-.text-footer {
+.footer-content-wrapper {
+    display: flex;
+    align-items: center;
+
+}
+
+.footer-main {
     max-width: 264px;
-    color: #ffffff;
+}
+
+.text-icon {
+    color: #FFFFFF;
+    margin: 0;
+    padding-left: 120px;
+    padding-bottom: 16px;
+    padding-right: 100px;
 }
 
 .logo-web-main-footer {
     color: #ffffff;
-}
+    margin-bottom: 16px;
 
+}
+.icon-list-footer-first{
+    margin-left: 120px;
+}
+.icon-list-footer{
+column-gap: 16px;
+}
+.text-footer {
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+}
+.icon-footer{
+display: flex;
+column-gap: 16px;
+}
 /* =============== /BODY =============== */
