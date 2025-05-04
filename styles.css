@@ -304,14 +304,23 @@ display: flex;
 justify-content: center;
 padding-bottom: 12px;
 }
-.icon-list-our-team:hover,
-.icon-list-our-team:focus{
-fill:#404BBF;
+.icons-list-2{
+display: flex;
+padding-left: 16px;
+padding-right: 16px;
+padding-bottom: 32px;
+column-gap: 24px;
 }
-.icon-list-our-team {
-    transition: fill 0.3s ease;
-    /* Плавний перехід для кольору заповнення */
+.icon-1{
+    display: flex;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+        align-items: center
 }
+
 /* =============== /Mark-Guerrero =============== */
 /* =============== Tom Ford =============== */
 .Tom-Ford-images{
@@ -377,12 +386,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     margin-bottom: 36px;
 }
 /* =============== /Daniel Wilson =============== */
-.icons-foto-wb{
-    display: flex;
-    justify-content: center;
-    column-gap: 25px;
-    padding-bottom: 32px;
-}
+
 .list-Our-Team {
     display: flex;
     margin-bottom: 120px;
@@ -531,9 +535,7 @@ left: 0;
 background-color: #4D5AE5;
 transform: translateY(150%);
 }
-.to-owerlay{
-    
-}
+
 .text-owerlay{
 padding-top: 40px;
 padding-left: 32px;
