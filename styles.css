@@ -318,7 +318,12 @@ column-gap: 24px;
     width: 40px;
     height: 40px;
     justify-content: center;
-        align-items: center
+    align-items: center;
+    cursor: pointer;
+}
+.icon-1:hover,
+.icon-1:focus{
+ background-color: #404BBF;
 }
 
 /* =============== /Mark-Guerrero =============== */
@@ -722,7 +727,7 @@ color: #ffffff;
 
 .logo-web-main-footer {
     color: #ffffff;
-    margin-bottom: 16px;
+    margin-bottom: 23px;
 
 }
 .icon-list-footer-first{
@@ -740,4 +745,52 @@ column-gap: 16px;
 display: flex;
 column-gap: 16px;
 }
+.icons-list-2-footer{
+    display: flex;
+    padding-left: 120px;
+    column-gap: 16px;
+}
+.icon-1:hover,
+.icon-1:focus{
+    background-color: #31D0AA;
+}
+/* =============== FORM =============== */
+.form-footer-text-main-div{
+ padding-left: 80px;
+
+}
+.form-text-footer{
+display: flex;
+flex-direction: column;
+}
+.text-span{
+    color: #ffffff;
+    font-size: 16px;
+}
+.form-input{
+border: 1px solid #fff;
+border-radius: 4px;
+width: 264px;
+height: 40px;
+padding-left: 10px;
+background: #2E2F42;
+}
+.form-label{
+    padding-bottom: 23px;
+}
+ .form-input::placeholder{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 12px;
+ }
+ .button-footer{
+border-radius: 4px;
+padding: 8px 24px;
+width: 165px;
+height: 40px;
+color: #FFFFFF;
+background: #4D5AE5;
+ }
+
+/* =============== /FORM =============== */
 /* =============== /BODY =============== */
