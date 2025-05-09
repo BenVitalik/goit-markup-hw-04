@@ -321,10 +321,6 @@ column-gap: 24px;
     align-items: center;
     cursor: pointer;
 }
-.icon-1:hover,
-.icon-1:focus{
- background-color: #404BBF;
-}
 
 /* =============== /Mark-Guerrero =============== */
 /* =============== Tom Ford =============== */
@@ -504,13 +500,14 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     color: #434455;
 }
 /* =============== Banking App =============== */
-.Banking-App{
-position: relative;
-align-items: center;
-background-color: #FFFFFF;
-border-radius: 6px;
-overflow: hidden;
-}
+.Banking-App {
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; }
 
  .system-banking-app{
 padding-bottom: 8px;
@@ -521,6 +518,9 @@ padding-left: 16px;
 padding-bottom: 32px;
 padding-left: 16px
 }
+.thumb {
+    position: relative;
+    overflow: hidden; }
 .section-text-Banking-App{
 border-bottom: 2px solid #E7E9FC;
 border-left: 2px solid #E7E9FC;
@@ -528,31 +528,86 @@ border-right: 2px solid #E7E9FC;
 border-top: none;
 
 } 
-.foto-Banking-App{
-vertical-align: middle;
-}
-.owerlay{
-position: absolute;
-width: 360px;
-height: 300px;
-top: 0;
-left: 0;
-background-color: #4D5AE5;
-transform: translateY(150%);
+.foto-Banking-App {
+    display: block;
+    width: 100%;
+    height: auto; }
+
+.owerlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77, 90, 229, 0.9);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.text-owerlay{
-padding-top: 40px;
-padding-left: 32px;
-padding-right: 32px;
-color: #ffffff;
+.text-owerlay {
+    color: #ffffff;
+    padding: 20px; 
 }
+.thumb:hover .owerlay {
+    transform: translateY(0);
+}
+
 /* =============== /Banking App =============== */
 /* =============== Cashless Payment =============== */
 .Cashless-Payment {
-    align-items: center;
+    position: relative;
     background-color: #FFFFFF;
     border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.foto-Cashless-Payment {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.owerlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77, 90, 229, 0.9);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-owerlay {
+    color: #ffffff;
+    padding: 20px;
+}
+
+.thumb:hover .owerlay {
+    transform: translateY(0);
+}
+
+.section-text-Cashless-Payment {
+    border-bottom: 2px solid #E7E9FC;
+    border-left: 2px solid #E7E9FC;
+    border-right: 2px solid #E7E9FC;
+    border-top: none;
 }
 
 .system-payment {
@@ -563,25 +618,59 @@ color: #ffffff;
 
 .text-payment {
     padding-bottom: 32px;
-    padding-left: 16px
+    padding-left: 16px; }
+/* =============== /Cashless Payment =============== */
+/* =============== Meditation App =============== */
+.Meditation-App {
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
 }
 
-.section-text-Cashless-Payment {
+.thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.foto-Meditation-App {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.owerlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77, 90, 229, 0.9);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-owerlay {
+    color: #ffffff;
+    padding: 20px;
+}
+
+.thumb:hover .owerlay {
+    transform: translateY(0);
+}
+
+.section-text-Meditation-App {
     border-bottom: 2px solid #E7E9FC;
     border-left: 2px solid #E7E9FC;
     border-right: 2px solid #E7E9FC;
     border-top: none;
-}
-
-.foto-Cashless-Payment {
-    vertical-align: middle;
-}
-/* =============== /Cashless Payment =============== */
-/* =============== Meditation App =============== */
-.Meditation-App {
-    align-items: center;
-    background-color: #FFFFFF;
-    border-radius: 6px;
 }
 
 .system-meditation-app {
@@ -592,25 +681,60 @@ color: #ffffff;
 
 .system-app {
     padding-bottom: 32px;
-    padding-left: 16px
-}
-
-.section-text-Meditation-App {
-    border-bottom: 2px solid #E7E9FC;
-    border-left: 2px solid #E7E9FC;
-    border-right: 2px solid #E7E9FC;
-    border-top: none;
-}
-
-.foto-Meditation-App {
-    vertical-align: middle;
+    padding-left: 16px;
 }
 /* =============== /Meditation App =============== */
 /* =============== Taxi Service =============== */
 .Taxi-Service {
-    align-items: center;
+    position: relative;
     background-color: #FFFFFF;
     border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.foto-Taxi-Service {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.owerlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77, 90, 229, 0.9);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-owerlay {
+    color: #ffffff;
+    padding: 20px;
+}
+
+.thumb:hover .owerlay {
+    transform: translateY(0);
+}
+
+.section-text-Taxi-Service {
+    border-bottom: 2px solid #E7E9FC;
+    border-left: 2px solid #E7E9FC;
+    border-right: 2px solid #E7E9FC;
+    border-top: none;
 }
 
 .system-taxi-service {
@@ -621,25 +745,60 @@ color: #ffffff;
 
 .text-taxi-service {
     padding-bottom: 32px;
-    padding-left: 16px
-}
-
-.section-text-Taxi-Service {
-    border-bottom: 2px solid #E7E9FC;
-    border-left: 2px solid #E7E9FC;
-    border-right: 2px solid #E7E9FC;
-    border-top: none;
-}
-
-.foto-Taxi-Service {
-    vertical-align: middle;
+    padding-left: 16px;
 }
 /* =============== /Taxi Service =============== */
 /* =============== Screen Illustrations =============== */
 .Screen-Illustrations {
-    align-items: center;
+    position: relative;
     background-color: #FFFFFF;
     border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.foto-Screen-Illustrations {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.owerlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77, 90, 229, 0.9);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-owerlay {
+    color: #ffffff;
+    padding: 20px;
+}
+
+.thumb:hover .owerlay {
+    transform: translateY(0);
+}
+
+.section-text-Screen-Illustrations {
+    border-bottom: 2px solid #E7E9FC;
+    border-left: 2px solid #E7E9FC;
+    border-right: 2px solid #E7E9FC;
+    border-top: none;
 }
 
 .system-screen-illustrations {
@@ -650,25 +809,60 @@ color: #ffffff;
 
 .text-screen-illustrations {
     padding-bottom: 32px;
-    padding-left: 16px
-}
-
-.section-text-Screen-Illustrations {
-    border-bottom: 2px solid #E7E9FC;
-    border-left: 2px solid #E7E9FC;
-    border-right: 2px solid #E7E9FC;
-    border-top: none;
-}
-
-.foto-Screen-Illustrations {
-    vertical-align: middle;
+    padding-left: 16px;
 }
 /* =============== /Screen Illustrations =============== */
 /* =============== Online Courses =============== */
 .Online-Courses {
-    align-items: center;
+    position: relative;
     background-color: #FFFFFF;
     border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.foto-Online-Courses {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.owerlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77, 90, 229, 0.9);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-owerlay {
+    color: #ffffff;
+    padding: 20px;
+}
+
+.thumb:hover .owerlay {
+    transform: translateY(0);
+}
+
+.section-text-Online-Courses {
+    border-bottom: 2px solid #E7E9FC;
+    border-left: 2px solid #E7E9FC;
+    border-right: 2px solid #E7E9FC;
+    border-top: none;
 }
 
 .system-online-courses {
@@ -679,18 +873,7 @@ color: #ffffff;
 
 .text-marketing {
     padding-bottom: 32px;
-    padding-left: 16px
-}
-
-.section-text-Online-Courses {
-    border-bottom: 2px solid #E7E9FC;
-    border-left: 2px solid #E7E9FC;
-    border-right: 2px solid #E7E9FC;
-    border-top: none;
-}
-
-.foto-Online-Courses {
-    vertical-align: middle;
+    padding-left: 16px;
 }
 /* =============== /Online Courses =============== */
 
@@ -785,12 +968,95 @@ background: #2E2F42;
  }
  .button-footer{
 border-radius: 4px;
-padding: 8px 24px;
 width: 165px;
 height: 40px;
 color: #FFFFFF;
 background: #4D5AE5;
+box-shadow: none;
+border: none;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+padding-left: 24px;
  }
+.button-footer:active {
+    color: #404BBF;
+}
+.button-main-div{
+    padding-top: 41px;
+    padding-left: 24px;
+}
+.icon-footer-button{
+    margin-left: 16px;
+}
+.icon-footer-button:active{
+    color: #404BBF;
+}
 
 /* =============== /FORM =============== */
 /* =============== /BODY =============== */
+/* =============== Modal =============== */
+.modal-backdrop{
+position: fixed;
+display: flex;
+top: 0;
+left: 0;
+z-index: 99999;
+background-color: rgba(0, 0, 0, 0.5);
+width: 100%;
+height: 100%;
+justify-content: center;
+align-items: center;
+}
+.modal{
+    height: 80%;
+    width: 408px;
+    max-height: 584px;
+    background-color: #FCFCFC;
+    border-radius: 4px;
+}
+.content-modal{
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 72px;
+}
+.text-modal{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center; 
+    color: #2e2f42;
+    padding-bottom: 25px;
+}
+.form-label-modal{
+    display: flex;
+    flex-direction: column;
+}
+.form-input-modal{
+    height: 40px;
+    border-radius: 4px;
+}
+.form-input-modal{
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.4)
+}
+.text-span-modal{
+    font-weight: 400;
+    font-size: 12px;
+    color: #e5e5e5;
+    padding-bottom: 7px;
+    padding-top: 10px;
+}
+.textarea{
+    resize: none;
+    padding-left: 15px;
+    padding-top: 9px;
+}
+.textarea::placeholder{
+    color: rgba(46, 47, 66, 0.4);
+    font-weight: 400;
+    font-size: 12px;
+}
+/* =============== /Modal =============== */
