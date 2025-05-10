@@ -382,6 +382,8 @@
 
 <div class="modal-backdrop">
   <div class="modal">
+    <div class="close-modal">
+    </div>
     <div class="content-modal">
     <p class="text-modal">Leave your contacts and we will call you back</p>
     <form>
@@ -390,17 +392,27 @@
         <input class="form-input-modal" type="text" name="name"/>
       </label>
       <label class="form-label-modal">
-        <span class="text-span-modal">Phone</span>
+        <span class="text-span-modal padding-text">Phone</span>
         <input class="form-input-modal" type="tel" name="phone"/>
       </label>
       <label class="form-label-modal">
-        <span class="text-span-modal">Email</span>
+        <span class="text-span-modal padding-text">Email</span>
         <input class="form-input-modal" type="email" name="email"/>
       </label>
       <label class="form-label-modal">
-        <span class="text-span-modal">Comment</span>
-        <textarea class="textarea" id="message" name="comment" placeholder="Text input" rows="5"></textarea>
+        <span class="text-span-modal padding-text">Comment</span>
+        <textarea class="textarea" id="message" name="comment" placeholder="Text input" rows="4"></textarea>
       </label>
+      <div class="checkbox-with-text">
+      <label class="checkbox-container">
+        <input type="checkbox" />
+        <span class="checkmark"></span>
+      </label>
+      <p class="text-policy">I accept the terms and conditions of the <span class="span-Policy">Privacy Policy</span></p>
+    </div>
+    <div class="div-button">
+      <button class="button-modal">Send</button>
+    </div>
     </form>
   </div>
   </div>
