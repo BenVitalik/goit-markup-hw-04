@@ -1044,6 +1044,7 @@ align-items: center;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     padding-left: 37px;
+    font-size: 12px
 }
 .text-span-modal{
     font-weight: 400;
@@ -1055,6 +1056,7 @@ align-items: center;
     resize: none;
     padding-left: 15px;
     padding-top: 9px;
+    font-size: 12px
 }
 .textarea::placeholder{
     color: rgba(46, 47, 66, 0.4);
@@ -1115,10 +1117,17 @@ box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     transform: translateY(-50%);
     width: 12px;
     height: 12px;
-    fill: #2E2F42;
+    
 
 }
 .div-class-modal-svg{
     position: relative;
 }
+.close-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-class-modal-svg:focus-within .icon-modal {
+    fill: #4D5AE5;}
 /* =============== /Modal =============== */
