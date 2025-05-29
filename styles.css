@@ -70,16 +70,50 @@ body {
     display: flex;
     align-items: center;
 }
+.button-footer{
+    border-radius: 4px;
+    padding: 8px 24px;
+    width: 165px;
+    height: 40px;
+    background: #4d5ae5;
+    box-shadow: none;
+    border: none;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px;
+}
+.subscribe-block{
+    display: flex;
+    justify-content: center;
+}
+.text-footer{
+    padding-right: 16px;
+}
+
 @media screen and (min-width: 1px) and (max-width: 769px) {
     body{   
             max-width: 768px;
             overflow-x: hidden;  
          }
+    .list-description {
+        padding-left: 16px;
+        padding-right: 16px;       
+    }
+    .modal-backdrop{
+        display: none;
+    }
     .list-main-navigation {
         display: none;
     }
     .contacts {
         display: none;
+    }
+    .conteiner-list{
+    display: none;
     }
     .conteiner-main-hud{
      display: flex;
@@ -124,12 +158,571 @@ body {
         border: none;
         margin-left: auto;       
     }
+    .list-description{
+    display: flex;
+    flex-direction: column;
+    margin-top: 96px;
+    justify-content: center;
+    }
+    .text-h2-list{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 12px;
+        font-size: 36px;
+    }
+   .text-under-h2-list{
+    margin-bottom: 83px;
+    font-size: 16px;
+   }
+   /*Зображення/критерії працівників*/
+   .foto{
+    background-color: #E7E9FC;
+   }
+   .Mark-Guerrero-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 72px;
+   }
+   .Tom-Ford-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 72px;
+   }
+   .Camila-Garcia-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 72px;
+   }
+   .Daniel-Wilson-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 72px;
+   }
+   .main-text-team{
+    padding-top: 96px;
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    margin-bottom: 72px;
+   }
+   .list-Our-Team{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   }
+   .class-2-foto{
+   align-items: center;
+   margin-bottom: 32px;
+   }
+   .class-name-foto-2{
+    justify-content: center;
+    margin-bottom: 8px;
+   }
+   .icons-list-2{
+    margin-bottom: 32px;
+    margin-top: 14px;
+    display: flex;
+    column-gap: 24px;
+   }
+   .icons-list-2 {
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+    column-gap: 24px;
+   }
+   .icon-1 {
+    display: flex;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;   
 }
+.images-our-team{
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46,  47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+   /*Our Portfolio*/
+   .main-text-portfolio{
+    display: flex;
+    justify-content: center;
+    margin-top: 96px;
+    margin-bottom: 72px;
+   }
+   .conteiner{
+    display: flex;
+    justify-content: center;
+   }
+   /* =============== Banking App =============== */
+   .Banking-App {
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    max-width: 288px;
+    margin-bottom: 48px;
+   }
+   .system-banking-app {
+    padding-bottom: 8px;
+    padding-top: 32px;
+    padding-left: 16px;
+   }
+   .text-app {
+    padding-bottom: 32px;
+    padding-left: 16px
+   }
+   .thumb {
+    position: relative;
+    overflow: hidden;
+   }
+   .section-text-Banking-App {
+    border-bottom: 2px solid #E7E9FC;
+    border-left: 2px solid #E7E9FC;
+    border-right: 2px solid #E7E9FC;
+    border-top: none;
+   }
+   .foto-Banking-App {
+    display: block;
+    width: 100%;
+    height: auto;
+   }
+   .owerlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77, 90, 229, 0.9);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   }
+   .text-owerlay {
+    color: #ffffff;
+    padding: 20px;
+   }
+   .thumb:hover .owerlay {
+    transform: translateY(0);
+   }
+   /* =============== /Banking App =============== */
+   /* =============== Cashless Payment =============== */
+   .Cashless-Payment {
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    max-width: 288px;
+    margin-bottom: 48px;
+   }
+   .thumb {
+    position: relative;
+    overflow: hidden;
+   }
+   .foto-Cashless-Payment {
+    display: block;
+    width: 100%;
+    height: auto;
+   }
+   .owerlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77, 90, 229, 0.9);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   }
+   .text-owerlay {
+    color: #ffffff;
+    padding: 20px;
+   }
+   .thumb:hover .owerlay {
+    transform: translateY(0);
+   }
+   .section-text-Cashless-Payment {
+    border-bottom: 2px solid #E7E9FC;
+    border-left: 2px solid #E7E9FC;
+    border-right: 2px solid #E7E9FC;
+    border-top: none;
+   }
+   .system-payment {
+    padding-bottom: 8px;
+    padding-top: 32px;
+    padding-left: 16px;
+   }
+   .text-payment {
+    padding-bottom: 32px;
+    padding-left: 16px;
+   }
+   /* =============== /Cashless Payment =============== */
+   /* =============== Meditation App =============== */
+   .Meditation-App {
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    max-width: 288px;
+    margin-bottom: 48px;
+   }
+   .thumb {
+    position: relative;
+    overflow: hidden;
+   }
+   .foto-Meditation-App {
+    display: block;
+    width: 100%;
+    height: auto;
+   }
+   .owerlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77, 90, 229, 0.9);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   }
+   .text-owerlay {
+    color: #ffffff;
+    padding: 20px;
+   }
+   .thumb:hover .owerlay {
+    transform: translateY(0);
+   }
+   .section-text-Meditation-App {
+    border-bottom: 2px solid #E7E9FC;
+    border-left: 2px solid #E7E9FC;
+    border-right: 2px solid #E7E9FC;
+    border-top: none;
+   }
+   .system-meditation-app {
+    padding-bottom: 8px;
+    padding-top: 32px;
+    padding-left: 16px;
+   }
+   .system-app {
+    padding-bottom: 32px;
+    padding-left: 16px;
+   }
+   /* =============== /Meditation App =============== */
+   /* =============== Taxi Service =============== */
+   .Taxi-Service {
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    max-width: 288px;
+    margin-bottom: 48px;
+   }
+   .thumb {
+    position: relative;
+    overflow: hidden;
+   }
+   .foto-Taxi-Service {
+    display: block;
+    width: 100%;
+    height: auto;
+   }
+   .owerlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77, 90, 229, 0.9);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   }
+   .text-owerlay {
+    color: #ffffff;
+    padding: 20px;
+   }
+   .thumb:hover .owerlay {
+    transform: translateY(0);
+   }
+   .section-text-Taxi-Service {
+    border-bottom: 2px solid #E7E9FC;
+    border-left: 2px solid #E7E9FC;
+    border-right: 2px solid #E7E9FC;
+    border-top: none;
+   }
+   .system-taxi-service {
+    padding-bottom: 8px;
+    padding-top: 32px;
+    padding-left: 16px;
+   }
+   .text-taxi-service {
+    padding-bottom: 32px;
+    padding-left: 16px;
+   }
+   /* =============== /Taxi Service =============== */
+   /* =============== Screen Illustrations =============== */
+   .Screen-Illustrations {
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    max-width: 288px;
+    margin-bottom: 48px;
+   }
+   .thumb {
+    position: relative;
+    overflow: hidden;
+   }
+   .foto-Screen-Illustrations {
+    display: block;
+    width: 100%;
+    height: auto;
+   }
+   .owerlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77, 90, 229, 0.9);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   }
+   .text-owerlay {
+    color: #ffffff;
+    padding: 20px;
+   }
+   .thumb:hover .owerlay {
+    transform: translateY(0);
+   }
+   .section-text-Screen-Illustrations {
+    border-bottom: 2px solid #E7E9FC;
+    border-left: 2px solid #E7E9FC;
+    border-right: 2px solid #E7E9FC;
+    border-top: none;
+   }
+   .system-screen-illustrations {
+    padding-bottom: 8px;
+    padding-top: 32px;
+    padding-left: 16px;
+   }
+   .text-screen-illustrations {
+    padding-bottom: 32px;
+    padding-left: 16px;
+   }
+   /* =============== /Screen Illustrations =============== */
+   /* =============== Online Courses =============== */
+   .Online-Courses {
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    max-width: 288px;
+    margin-bottom: 48px;
+   }
+   .thumb {
+    position: relative;
+    overflow: hidden;
+   }
+   .foto-Online-Courses {
+    display: block;
+    width: 100%;
+    height: auto;
+   }
+   .owerlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77, 90, 229, 0.9);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   }
+   .text-owerlay {
+    color: #ffffff;
+    padding: 20px;
+   }
+   .thumb:hover .owerlay {
+    transform: translateY(0);
+   }
+   .section-text-Online-Courses {
+    border-bottom: 2px solid #E7E9FC;
+    border-left: 2px solid #E7E9FC;
+    border-right: 2px solid #E7E9FC;
+    border-top: none;
+   }
+   .system-online-courses {
+    padding-bottom: 8px;
+    padding-top: 32px;
+    padding-left: 16px;
+   }
+   .text-marketing {
+    padding-bottom: 32px;
+    padding-left: 16px;
+   }
+   /* =============== /Online Courses =============== */
+   .conteiner-footer{
+    height: 664px;
+    background-color: #2E2F42;
+   }
+   .logo-web-main-footer{
+    padding-top: 96px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #f4f4fd;
+   }
+   .footer-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .text-footer{
+    padding-top: 16px;
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+   }
+   .footer-social{
+    display: flex;
+    justify-content: center;
+   }
+   .text-icon{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+   }
+   .icons-list-2-footer{
+    display: flex;
+    margin-top: 112px;
+    justify-content: center;
+   }
+   
+   .footer-social{
+    display: flex;
+    justify-content: center;
+   }
+   .footer-social {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       gap: 16px;
+       justify-content: center;
+   }
+
+   .text-icon {
+       font-size: 16px;
+       font-weight: 600;
+       color: #fff;
+       margin: 0;
+       margin-top: 72px;
+   }
+
+   .icons-list-2-footer {
+       display: flex;
+       gap: 12px;
+       padding: 0;
+       margin: 0;
+       list-style: none; }
+    .form-footer {
+       display: flex;
+       justify-content: center;
+    }
+    .icons-list-2-footer {
+       padding-bottom: 72px;
+    }
+    .form-input-modal {
+       background-color: #2E2F42;
+       border-radius: 4px;
+       width: 288px;
+       height: 40px;
+       border: 1px solid rgba(255, 255, 255, 0.5);
+       padding: 16.66px;
+       font-size: 12px;
+       margin-bottom: 15.56px;
+    }
+    .form-label-modal{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    }
+    .text-span-modal{
+        color: #fff;
+        margin-bottom: 16.44px;
+    }
+   }
+   
+
 @media screen and (min-width: 769px) and (max-width: 1440px){
     body {
-    
     margin: 0 auto;
         }
+    .list-description{
+    padding-left: 16px;
+    padding-right: 16px;
+    }
+    .conteiner-list {
+    display: none;
+    }
+    .modal-backdrop {
+        display: none;
+     }
     .main-header{
     padding-top: 16px;
     padding-bottom: 16px;
@@ -188,6 +781,553 @@ body {
     .text-address{
      padding-bottom: 12px;
     }
+    .list-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 0 16px;
+    }
+    .list-second {
+    width: calc(50% - 12px);
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 4px;    
+    }
+    .list-description{
+    margin-top: 96px;
+    margin-bottom: 96px;
+    }
+        /*Зображення/критерії працівників*/
+    .foto {
+    background-color: #E7E9FC;
+    }
+    
+    .Mark-Guerrero-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 72px;
+    }
+    
+    .Tom-Ford-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 72px;
+    }
+    
+    .Camila-Garcia-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 72px;
+    }
+    
+    .Daniel-Wilson-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 72px;
+    }
+    
+    .main-text-team {
+    padding-top: 96px;
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    margin-bottom: 72px;
+    }
+    
+    .list-Our-Team {
+    display: flex;
+    align-items: center;
+    }
+
+
+    .class-2-foto {
+    align-items: center;
+    margin-bottom: 32px;
+    }
+    
+    .class-name-foto-2 {
+    justify-content: center;
+    margin-bottom: 8px;
+    }
+    
+    .icons-list-2 {
+    margin-bottom: 32px;
+    margin-top: 14px;
+    display: flex;
+    column-gap: 24px;
+    }
+    
+    .icons-list-2 {
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+    column-gap: 24px;
+    }
+    
+    .icon-1 {
+    display: flex;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    }
+
+    .images-our-team {
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);  
+    }
+    .list-Our-Team {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin: 0 auto;
+    max-width: 570px;
+    }
+        /*Our Portfolio*/
+    .main-text-portfolio {
+    display: flex;
+    justify-content: center;
+    margin-top: 96px;
+    margin-bottom: 72px;
+    }
+    .conteiner {
+    display: flex;
+    justify-content: center;
+    }
+    .list-Our-Portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    }
+    .list-Our-Portfolio>li {
+    flex: 0 1 calc((100%) / 3);
+                        
+    }        
+        /* =============== Banking App =============== */
+        .Banking-App {
+            position: relative;
+            background-color: #FFFFFF;
+            border-radius: 6px;
+            overflow: hidden;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            max-width: 288px;
+            margin-bottom: 48px;
+        }
+    
+        .system-banking-app {
+            padding-bottom: 8px;
+            padding-top: 32px;
+            padding-left: 16px;
+        }
+    
+        .text-app {
+            padding-bottom: 32px;
+            padding-left: 16px
+        }
+    
+        .thumb {
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .section-text-Banking-App {
+            border-bottom: 2px solid #E7E9FC;
+            border-left: 2px solid #E7E9FC;
+            border-right: 2px solid #E7E9FC;
+            border-top: none;
+        }
+    
+        .foto-Banking-App {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    
+        .owerlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(77, 90, 229, 0.9);
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    
+        .text-owerlay {
+            color: #ffffff;
+            padding: 20px;
+        }
+    
+        .thumb:hover .owerlay {
+            transform: translateY(0);
+        }
+    
+        /* =============== /Banking App =============== */
+        /* =============== Cashless Payment =============== */
+        .Cashless-Payment {
+            position: relative;
+            background-color: #FFFFFF;
+            border-radius: 6px;
+            overflow: hidden;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            max-width: 288px;
+            margin-bottom: 48px;
+        }
+    
+        .thumb {
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .foto-Cashless-Payment {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    
+        .owerlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(77, 90, 229, 0.9);
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    
+        .text-owerlay {
+            color: #ffffff;
+            padding: 20px;
+        }
+    
+        .thumb:hover .owerlay {
+            transform: translateY(0);
+        }
+    
+        .section-text-Cashless-Payment {
+            border-bottom: 2px solid #E7E9FC;
+            border-left: 2px solid #E7E9FC;
+            border-right: 2px solid #E7E9FC;
+            border-top: none;
+        }
+    
+        .system-payment {
+            padding-bottom: 8px;
+            padding-top: 32px;
+            padding-left: 16px;
+        }
+    
+        .text-payment {
+            padding-bottom: 32px;
+            padding-left: 16px;
+        }
+    
+        /* =============== /Cashless Payment =============== */
+        /* =============== Meditation App =============== */
+        .Meditation-App {
+            position: relative;
+            background-color: #FFFFFF;
+            border-radius: 6px;
+            overflow: hidden;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            max-width: 288px;
+            margin-bottom: 48px;
+        }
+    
+        .thumb {
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .foto-Meditation-App {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    
+        .owerlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(77, 90, 229, 0.9);
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    
+        .text-owerlay {
+            color: #ffffff;
+            padding: 20px;
+        }
+    
+        .thumb:hover .owerlay {
+            transform: translateY(0);
+        }
+    
+        .section-text-Meditation-App {
+            border-bottom: 2px solid #E7E9FC;
+            border-left: 2px solid #E7E9FC;
+            border-right: 2px solid #E7E9FC;
+            border-top: none;
+        }
+    
+        .system-meditation-app {
+            padding-bottom: 8px;
+            padding-top: 32px;
+            padding-left: 16px;
+        }
+    
+        .system-app {
+            padding-bottom: 32px;
+            padding-left: 16px;
+        }
+    
+        /* =============== /Meditation App =============== */
+        /* =============== Taxi Service =============== */
+        .Taxi-Service {
+            position: relative;
+            background-color: #FFFFFF;
+            border-radius: 6px;
+            overflow: hidden;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            max-width: 288px;
+            margin-bottom: 48px;
+        }
+    
+        .thumb {
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .foto-Taxi-Service {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    
+        .owerlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(77, 90, 229, 0.9);
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    
+        .text-owerlay {
+            color: #ffffff;
+            padding: 20px;
+        }
+    
+        .thumb:hover .owerlay {
+            transform: translateY(0);
+        }
+    
+        .section-text-Taxi-Service {
+            border-bottom: 2px solid #E7E9FC;
+            border-left: 2px solid #E7E9FC;
+            border-right: 2px solid #E7E9FC;
+            border-top: none;
+        }
+    
+        .system-taxi-service {
+            padding-bottom: 8px;
+            padding-top: 32px;
+            padding-left: 16px;
+        }
+    
+        .text-taxi-service {
+            padding-bottom: 32px;
+            padding-left: 16px;
+        }
+    
+        /* =============== /Taxi Service =============== */
+        /* =============== Screen Illustrations =============== */
+        .Screen-Illustrations {
+            position: relative;
+            background-color: #FFFFFF;
+            border-radius: 6px;
+            overflow: hidden;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            max-width: 288px;
+            margin-bottom: 48px;
+        }
+    
+        .thumb {
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .foto-Screen-Illustrations {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    
+        .owerlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(77, 90, 229, 0.9);
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    
+        .text-owerlay {
+            color: #ffffff;
+            padding: 20px;
+        }
+    
+        .thumb:hover .owerlay {
+            transform: translateY(0);
+        }
+    
+        .section-text-Screen-Illustrations {
+            border-bottom: 2px solid #E7E9FC;
+            border-left: 2px solid #E7E9FC;
+            border-right: 2px solid #E7E9FC;
+            border-top: none;
+        }
+    
+        .system-screen-illustrations {
+            padding-bottom: 8px;
+            padding-top: 32px;
+            padding-left: 16px;
+        }
+    
+        .text-screen-illustrations {
+            padding-bottom: 32px;
+            padding-left: 16px;
+        }
+    
+        /* =============== /Screen Illustrations =============== */
+        /* =============== Online Courses =============== */
+        .Online-Courses {
+            position: relative;
+            background-color: #FFFFFF;
+            border-radius: 6px;
+            overflow: hidden;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            max-width: 288px;
+            margin-bottom: 48px;
+        }
+    
+        .thumb {
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .foto-Online-Courses {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    
+        .owerlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(77, 90, 229, 0.9);
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    
+        .text-owerlay {
+            color: #ffffff;
+            padding: 20px;
+        }
+    
+        .thumb:hover .owerlay {
+            transform: translateY(0);
+        }
+    
+        .section-text-Online-Courses {
+            border-bottom: 2px solid #E7E9FC;
+            border-left: 2px solid #E7E9FC;
+            border-right: 2px solid #E7E9FC;
+            border-top: none;
+        }
+    
+        .system-online-courses {
+            padding-bottom: 8px;
+            padding-top: 32px;
+            padding-left: 16px;
+        }
+    
+        .text-marketing {
+            padding-bottom: 32px;
+            padding-left: 16px;
+        }
+    
+        /* =============== /Online Courses =============== */
+    .conteiner-footer {
+        height: 664px;
+        background-color: #2E2F42;
+}
+
 }
 @media screen and (min-width: 1440px) {
     .main-header {
@@ -205,7 +1345,10 @@ body {
             padding-left: 478px;
     
         }
-    
+        .list-second{
+            max-width: 260px;
+            min-height: 80px;
+        }
         .main-conteiner {
             display: flex;
             max-width: 1158px;
