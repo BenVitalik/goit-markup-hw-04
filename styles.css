@@ -90,9 +90,6 @@ body {
     display: flex;
     justify-content: center;
 }
-.text-footer{
-    padding-right: 16px;
-}
 
 @media screen and (min-width: 1px) and (max-width: 769px) {
     body{   
@@ -102,6 +99,9 @@ body {
     .list-description {
         padding-left: 16px;
         padding-right: 16px;       
+    }
+    .text-footer {
+    padding-right: 16px;   
     }
     .modal-backdrop{
         display: none;
@@ -705,6 +705,11 @@ body {
     .text-span-modal{
         color: #fff;
         margin-bottom: 16.44px;
+    }
+    .sa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
    }
    
@@ -1324,10 +1329,74 @@ body {
     
         /* =============== /Online Courses =============== */
     .conteiner-footer {
-        height: 664px;
+        height: 456px;
         background-color: #2E2F42;
 }
-
+.logo-web-main-footer {
+    padding-top: 96px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #f4f4fd;
+}
+.footer-content-wrapper{
+ display: flex;
+ justify-content: center;
+}
+.text-footer {
+    padding-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    width: 290px;
+    height: 112px;
+}
+.footer-content-wrapper{
+    display: flex;
+}
+.icons-list-2-footer{
+    display: flex;
+    column-gap: 16px;
+}
+.text-icon{
+    color: #fff;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 96px;
+}
+.div-class-modal-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.sa{
+    display: flex;
+    flex-direction: column
+}
+.div-class-modal-svg{
+    margin-top: 72px;
+}
+.form-input-modal {
+    background-color: #2E2F42;
+    border-radius: 4px;
+    width: 288px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 16.66px;
+    font-size: 12px;
+    margin-bottom: 32.56px;
+}
+.text-span-modal{
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+}
+.form-input-modal{
+    margin-top: 16px;
+}
 }
 @media screen and (min-width: 1440px) {
     .main-header {
@@ -1368,7 +1437,9 @@ body {
             column-gap: 42px;
             font-weight: 700;
         }
-    
+        .mobileversion-button{
+            display: none;
+        }
         .contacts {
             font-style: normal;
             display: flex;
@@ -2233,63 +2304,126 @@ body {
             background-color: #31D0AA;
         }
         /* =============== FORM =============== */
-        .form-footer-text-main-div {
-            padding-left: 80px;
-    
-        }
-        .form-text-footer {
+        .conteiner-footer {
+            height: auto; 
+            background-color: #2E2F42;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; 
+            padding: 96px 40px;
+            gap: 80px;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+          }
+          
+          /* --- Блок з логотипом і описом --- */
+          .logo-web-main-footer {
+            font-weight: 500;
+            font-size: 18px;
+            color: #f4f4fd;
+            margin: 0;
+          }
+          
+          .text-footer {
+            margin-top: 16px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: #f4f4fd;
+            max-width: 264px;
+          }
+          
+          .footer-socials {
             display: flex;
             flex-direction: column;
-        }
-        .text-span {
+            align-items: flex-start;
+            gap: 16px;
+            margin: 0; 
+          }
+          
+          .icons-list-2-footer {
+            display: flex;
+            column-gap: 16px;
+          }
+          
+          .text-icon {
+            color: #fff;
+            font-weight: 500;
+            font-size: 16px;
+            margin: 0;
+          }
+          
+          
+          .form-footer {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+            margin: 0;
+          }
+          
+          .form-label-modal {
+            margin: 0;
+          }
+          
+          .text-span-modal {
             color: #ffffff;
             font-size: 16px;
-        }
-        .form-input {
-            border: 1px solid #fff;
+            margin-bottom: 16px;
+            display: inline-block;
+            font-weight: 500;
+          }
+          
+          .div-class-modal-svg {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+          }
+          
+          .form-input-modal {
             border-radius: 4px;
             width: 264px;
             height: 40px;
             padding-left: 10px;
             background: #2E2F42;
-        }
-        .form-label {
-            padding-bottom: 23px;
-        }
-        .form-input::placeholder {
+            color: #fff;
+            font-size: 14px;
+          }
+          
+          .form-input-modal::placeholder {
             color: #FFFFFF;
             font-weight: 400;
             font-size: 12px;
-        }
-        .button-footer {
+          }
+          
+          .button-footer {
             border-radius: 4px;
             width: 165px;
             height: 40px;
             color: #FFFFFF;
             background: #4D5AE5;
-            box-shadow: none;
             border: none;
             display: flex;
             align-items: center;
-            justify-content: flex-start;
-            padding-left: 24px;
-        }
-        .button-footer:active {
-            color: #404BBF;
-        }
-        .button-main-div {
-            padding-top: 41px;
-            padding-left: 24px;
-        }
-        .icon-footer-button {
-            margin-left: 16px;
-        }
-        .icon-footer-button:active {
-            color: #404BBF;
-        }
-        .mobileversion-button{
-            display: none;
-        }
+            justify-content: center;
+            gap: 8px;
+            padding: 0 24px;
+            font-size: 16px;
+            cursor: pointer;
+          }
+          .subscribe-block{
+            margin-top: 39px;
+          }
+          .icon-footer-button {
+            margin: 0;
+          }
+          .form-input-modal{
+            border: 1px solid #F4F4FD
+          }
+          .footer-social{
+            margin-bottom: 21px;
+          }
         /* =============== /FORM =============== */
         /* =============== /BODY =============== */
         /* =============== Modal =============== */
@@ -2345,12 +2479,11 @@ body {
         .form-input-modal {
             height: 40px;
             border-radius: 4px;
-            border: 1px solid rgba(46, 47, 66, 0.4);
             padding-left: 37px;
             font-size: 12px
         }
         .text-span-modal {
-            font-weight: 400;
+            font-weight: 500;
             font-size: 12px;
             color: #e5e5e5;
             padding-bottom: 7px;
